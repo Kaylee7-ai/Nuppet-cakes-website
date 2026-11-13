@@ -62,19 +62,20 @@ This is a static site and can be deployed on GitHub Pages, Vercel or another sta
 | Phone | Google Maps result and [Wanderlog](https://wanderlog.com/place/details/11460623/nupet-cakes) show +233 20 833 7856. | High for public listing; owner confirmation pending |
 | WhatsApp | [Wanderlog](https://wanderlog.com/place/details/11460623/nupet-cakes) suggests WhatsApp contact; [CakeLand](https://cakeland.online/bakers/nupet-cakes) says phone, email and WhatsApp orders. No exact official wa.me link surfaced. | Medium; link generated from listed phone is provisional; owner must confirm |
 | Hours | Google Maps result and [Wanderlog](https://wanderlog.com/place/details/11460623/nupet-cakes) show Mon–Sat 8am–7pm; Sunday closed. | High for public listing; confirm holidays |
-| Google rating / count | Google Maps business result: 5.0/5, 73 reviews. [Wanderlog](https://wanderlog.com/place/details/11460623/nupet-cakes): 4.9/5, 74 Google-sourced reviews. | Medium; snapshots conflict / change over time; omitted from schema |
+| Google rating / count | Google Maps business result: 5.0/5, 73 reviews. The current [Wanderlog page](https://wanderlog.com/place/details/11460623/nupet-cakes) displays 4.9/5, 73 reviews; older crawls showed 74. | Medium; rating snapshots conflict / counts update; omitted from schema |
 | Product categories | [CakeLand](https://cakeland.online/bakers/nupet-cakes) lists birthday and celebration cakes / buttercream celebration cakes. | Medium; third-party summary, owner approval required |
-| Social profiles | CakeLand mentions an Instagram profile but no verifiable handle surfaced. Searches did not establish official Instagram, Facebook, TikTok, X, YouTube or Snapchat URLs. | Unverified; no social links added |
+| Instagram | [@nupetcakes](https://www.instagram.com/nupetcakes/) is linked from the [CakeLand Nupet Cakes listing](https://cakeland.online/bakers/nupet-cakes) (Instagram link target). | Medium; directory-sourced, profile fetch was throttled; owner must confirm ownership |
+| Facebook, TikTok, X, YouTube, Snapchat | No reliable official profile URL surfaced in targeted searches. | Unverified; not linked |
 | Email | CakeLand says orders by email, but no address surfaced. | Unverified; omitted |
 | Delivery | Review summaries mention delivery; [FeelyFeely](https://feelyfeely.com/locals/cake-shop/nupet-cakes-spintex-3w3egwrt) lists delivery and pickup options, but areas and fees are absent. | Medium for service mention; zones / fees unverified |
 | Flavours, sizes, prices | No reliable Nupet-specific menu, sizes/servings or prices found. Other vendors' prices are not Nupet prices and are not used. | Unverified; quote required |
 
-Map links are address-based search links, not a verified latitude/longitude pin or a Maps embed.
+The [Google Maps pin](https://www.google.com/maps/place/@5.641633,-0.106401,17z/data=!4m10!3m9!1s0xfdf856fe1fc2da9:0x3bec4ff4174bc668!5m2!4m1!1i2!8m2!3d5.641633!4d-0.106401!9m1!1b1) resolves to approximately 5.641633, -0.106401. A separate Google Maps embed requires an API key and has not been added.
 
 ## Owner checklist — required before public handover
-- [ ] Confirm exact trading name and current pickup address / map pin.
+- [ ] Confirm exact trading name and current pickup address / map pin (Maps currently resolves to 5.641633, -0.106401; older directories show Gowa Link).
 - [ ] Confirm phone and whether +233 20 833 7856 is the official WhatsApp number.
-- [ ] Supply official social profile URLs for Instagram, Facebook, TikTok, X, YouTube and Snapchat, or confirm none.
+- [ ] Confirm that Instagram @nupetcakes is the business's official account; supply official Facebook, TikTok, X, YouTube and Snapchat URLs or confirm none.
 - [ ] Supply business email address or confirm email enquiries are not accepted.
 - [ ] Confirm weekly and holiday opening hours.
 - [ ] Supply approved real cake photographs and written permission to publish them; replace every Unsplash placeholder.
