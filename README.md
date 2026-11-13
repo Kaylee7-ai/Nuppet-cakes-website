@@ -29,17 +29,17 @@ Open `index.html` in a modern browser. No build step or package installation is 
 - Official Instagram/Facebook handles, email, exact WhatsApp URL, flavour menu, sizes/servings, delivery zones, pricing, lead time, deposits, payment methods, cancellation and allergen policies remain unconfirmed.
 
 ## Image credits
-All displayed cake photographs are illustrative stock samples sourced from Unsplash pages marked as free to use under the Unsplash License at the time of research. They are not photographs of Nupet Cakes products. The remote image URLs use Unsplash's image CDN with `auto=format`, crop and quality parameters; supported browsers may receive WebP/modern formats. The hero uses a larger rendition; collection images are lazy-loaded and resized to 900px wide. The live transfer size is controlled by the CDN and can vary, so verify actual bytes in production before claiming strict size caps.
 
-1. Alexander Mass — “A wedding cake with flowers and lights”: https://unsplash.com/photos/a-wedding-cake-with-flowers-and-lights-tAu9-HL5_AU
-2. xiaokang Zhang — “A birthday cake with candles and a sign that says happy birthday”: https://unsplash.com/photos/a-birthday-cake-with-candles-and-a-sign-that-says-happy-birthday-qJnnYcSErsI
-3. Robert Vasquez — “A table topped with a pink and white cake”: https://unsplash.com/photos/a-table-topped-with-a-pink-and-white-cake-cAPTe3Z5awY
-4. Rohith Murali — “A table topped with cupcakes and a cake”: https://unsplash.com/photos/a-table-topped-with-cupcakes-and-a-cake-nf3cpi14cN4
-5. Robert Anderson — “A table topped with lots of cupcakes covered in pink frosting”: https://unsplash.com/photos/a-table-topped-with-lots-of-cupcakes-covered-in-pink-frosting-W-tSAyRMy6w
-6. Jonathan Borba — “Elegant dessert table with a white cake and various pastries”: https://unsplash.com/photos/elegant-dessert-table-with-a-white-cake-and-various-pastries-HKes9_amYnE
-7. Liana S — “A white cake decorated with small daisy flowers”: https://unsplash.com/photos/a-white-cake-decorated-with-small-daisy-flowers-vGvoviYUE3c
+The concept currently uses remote illustrative images from the Unsplash image CDN. These are not Nupet Cakes product photographs and must be replaced with owner-approved portfolio images before the site is presented as the business's official website.
 
-License reference: https://unsplash.com/license
+The exact image source identifiers used in the current files are listed below so each can be traced and checked. Photographer names and original photo-page titles have **not** been reliably matched to every CDN identifier, so this README deliberately does not invent individual photographer credits. The Unsplash CDN URLs are used with responsive crop/quality parameters.
+
+- Hero background: [Unsplash image source](https://images.unsplash.com/photo-1774660811213-5928a566cfb7)
+- Collection images: [photo-1557979619-445218f326b9](https://images.unsplash.com/photo-1557979619-445218f326b9), [photo-1578985545062-69928b1d9587](https://images.unsplash.com/photo-1578985545062-69928b1d9587), [photo-1535141192574-5d4897c12636](https://images.unsplash.com/photo-1535141192574-5d4897c12636), [photo-1562777717-dc6984f65a63](https://images.unsplash.com/photo-1562777717-dc6984f65a63), [photo-1602351447937-745cb720612f](https://images.unsplash.com/photo-1602351447937-745cb720612f), [photo-1621303837174-89787a7d4729](https://images.unsplash.com/photo-1621303837174-89787a7d4729), [photo-1606890737304-57a1ca8a5b62](https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62).
+- Editorial / story image: [photo-1681497397322-f5c92c50839c](https://images.unsplash.com/photo-1681497397322-f5c92c50839c).
+- License reference: [Unsplash License](https://unsplash.com/license).
+
+**Verification limitation:** automated external image requests could not be completed in this environment, so individual image load status and current photographer attribution are not claimed as verified. Test each image in the deployed browser and replace any broken image. Owner-provided images with written permission are preferred.
 
 ## Owner approval checklist before launch
 1. Confirm official business name, pickup address, phone, opening hours and contact channels.
