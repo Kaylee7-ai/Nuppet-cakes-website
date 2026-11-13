@@ -68,8 +68,8 @@ $("#sendBasket").addEventListener("click",()=>{
  const lines=basket.map((c,i)=>(i+1)+". "+c.name+" ("+c.group+")").join("\n");
  whatsapp("Hello Nupet Cakes, I would like to enquire about these cake design inspirations:\n"+lines+"\nPlease confirm whether similar designs are possible, along with available flavours, sizes, pricing and lead time. Thank you.");
 });
-[search,occasion,flavour,size,budget].forEach(el=>el.addEventListener("input",render));
-$("#clearFilters").addEventListener("click",()=>{search.value="";occasion.value="all";flavour.value="all";size.value="all";budget.value="all";render();});
+[search,occasion].forEach(el=>el.addEventListener("input",render));
+$("#clearFilters").addEventListener("click",()=>{search.value="";occasion.value="all";render();});
 const dateInput=$("#neededDate");if(dateInput){const today=new Date();const local=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);dateInput.min=local;}
 $("#inspiration").addEventListener("change",e=>{$("#fileNote").textContent=e.target.files.length?"Selected: "+e.target.files[0].name+" — attach it manually after WhatsApp opens.":"If you attach an image, send it manually in WhatsApp after the message opens.";});
 $("#orderForm").addEventListener("submit",e=>{
@@ -85,8 +85,20 @@ $("#orderForm").addEventListener("submit",e=>{
  $("#formStatus").textContent="Your enquiry is ready. WhatsApp will open in a new tab; review and send the message there. Attach any inspiration image manually.";
  whatsapp(message);
 });
-$("#emailFallback").addEventListener("click",e=>{e.preventDefault();const d=new FormData($("#orderForm"));const subject=encodeURIComponent("Cake enquiry for "+(d.get("date")||"a future date"));const body=encodeURIComponent("Hello Nupet Cakes,\n\nI would like to enquire about a cake.\nName: "+(d.get("name")||"") +"\nPhone: "+(d.get("phone")||"")+"\nOccasion: "+(d.get("occasion")||"") +"\nDate: "+(d.get("date")||"") +"\n\nPlease share your availability and pricing.\n\nThank you.");window.location.href="mailto:?subject="+subject+"&body="+body;});
+n\nI would like to enquire about a cake.\nName: "+(d.get("name")||"") +"\nPhone: "+(d.get("phone")||"")+"\nOccasion: "+(d.get("occasion")||"") +"\nDate: "+(d.get("date")||"") +"\n\nPlease share your availability and pricing.\n\nThank you.");window.location.href="mailto:?subject="+subject+"&body="+body;});
 const toggle=$("#menuToggle"),nav=$("#mainNav");toggle.addEventListener("click",()=>{const opened=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(opened));toggle.setAttribute("aria-label",opened?"Close navigation":"Open navigation");});
 nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
 $("#year").textContent=new Date().getFullYear();
 render();count();
+
+const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!reduceMotion && "IntersectionObserver" in window){
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target);}
+ }),{threshold:.12});
+ document.querySelectorAll(".reveal").forEach(el=>{el.classList.add("reveal-ready");observer.observe(el);});
+}
+if(!reduceMotion && window.matchMedia("(min-width: 900px)").matches){
+ const hero=document.querySelector(".hero-image");
+ window.addEventListener("scroll",()=>{const y=Math.min(window.scrollY*.16,90);hero.style.transform="scale(1.06) translateY("+y+"px)";},{passive:true});
+}
