@@ -52,3 +52,35 @@ License reference: https://unsplash.com/license
 
 ## Deployment
 This is a static site and can be deployed on GitHub Pages, Vercel or another static host. For GitHub Pages, publish the repository root from the chosen branch. For Vercel, import the repository and use the default static deployment settings (no build command; output directory `.`). The concept is not an active ordering system and does not process payments or store customer data.
+## Research sources and confidence (checked 13 November 2026)
+
+| Detail | Public evidence | Confidence / status |
+|---|---|---|
+| Name / category | [Google Maps listing](https://www.google.com/maps/search/?api=1&query=Nupet+Cakes%2C+13+Nii+Klu+Street%2C+Spintex+Road%2C+Accra%2C+Ghana) identifies Nupet Cakes as a cake shop. | High for listing; owner confirmation pending |
+| Address | [Google Maps result](https://www.google.com/maps/search/?api=1&query=Nupet+Cakes%2C+13+Nii+Klu+Street%2C+Spintex+Road%2C+Accra%2C+Ghana) and [Wanderlog](https://wanderlog.com/place/details/11460623/nupet-cakes) show 13 Nii Klu Street, Spintex Road, Accra. | Medium-high; older directories conflict |
+| Older address conflict | [GeoView](https://gh.geoview.info/nupet_cakes%2C7285068903n) records 3 Gowa Link (OSM node last updated 2020); [MyGhanaOnline](https://myghanaonline.com/entity.php?id=1b5601ae-9e52-11f1-9e51-d05099fed12b) also shows 3 Gowa Link. | Low / likely stale; owner must confirm exact pickup address |
+| Phone | Google Maps result and [Wanderlog](https://wanderlog.com/place/details/11460623/nupet-cakes) show +233 20 833 7856. | High for public listing; owner confirmation pending |
+| WhatsApp | [Wanderlog](https://wanderlog.com/place/details/11460623/nupet-cakes) suggests WhatsApp contact; [CakeLand](https://cakeland.online/bakers/nupet-cakes) says phone, email and WhatsApp orders. No exact official wa.me link surfaced. | Medium; link generated from listed phone is provisional; owner must confirm |
+| Hours | Google Maps result and [Wanderlog](https://wanderlog.com/place/details/11460623/nupet-cakes) show Mon–Sat 8am–7pm; Sunday closed. | High for public listing; confirm holidays |
+| Google rating / count | Google Maps business result: 5.0/5, 73 reviews. [Wanderlog](https://wanderlog.com/place/details/11460623/nupet-cakes): 4.9/5, 74 Google-sourced reviews. | Medium; snapshots conflict / change over time; omitted from schema |
+| Product categories | [CakeLand](https://cakeland.online/bakers/nupet-cakes) lists birthday and celebration cakes / buttercream celebration cakes. | Medium; third-party summary, owner approval required |
+| Social profiles | CakeLand mentions an Instagram profile but no verifiable handle surfaced. Searches did not establish official Instagram, Facebook, TikTok, X, YouTube or Snapchat URLs. | Unverified; no social links added |
+| Email | CakeLand says orders by email, but no address surfaced. | Unverified; omitted |
+| Delivery | Review summaries mention delivery; [FeelyFeely](https://feelyfeely.com/locals/cake-shop/nupet-cakes-spintex-3w3egwrt) lists delivery and pickup options, but areas and fees are absent. | Medium for service mention; zones / fees unverified |
+| Flavours, sizes, prices | No reliable Nupet-specific menu, sizes/servings or prices found. Other vendors' prices are not Nupet prices and are not used. | Unverified; quote required |
+
+Map links are address-based search links, not a verified latitude/longitude pin or a Maps embed.
+
+## Owner checklist — required before public handover
+- [ ] Confirm exact trading name and current pickup address / map pin.
+- [ ] Confirm phone and whether +233 20 833 7856 is the official WhatsApp number.
+- [ ] Supply official social profile URLs for Instagram, Facebook, TikTok, X, YouTube and Snapchat, or confirm none.
+- [ ] Supply business email address or confirm email enquiries are not accepted.
+- [ ] Confirm weekly and holiday opening hours.
+- [ ] Supply approved real cake photographs and written permission to publish them; replace every Unsplash placeholder.
+- [ ] Confirm cake categories, flavours, fillings, icing options, sizes, servings and prices / quote ranges.
+- [ ] Confirm delivery areas, fees, pickup instructions and same-day availability.
+- [ ] Confirm lead time, deposits, payment channels, cancellation/refund policy and allergen handling.
+- [ ] Approve review wording, SEO metadata, structured data and all customer-facing text.
+- [ ] Test the WhatsApp number and approve the prefilled enquiry wording.
+- [ ] Confirm GitHub Pages deployment and approved public domain before sharing as the official website.
