@@ -17,3 +17,96 @@
 
 @media(min-width:651px){.filter-panel{grid-template-columns:minmax(260px,2fr) minmax(180px,1fr) auto}}
 .image-unavailable{display:none!important}
+
+
+/* Editorial typography refinement */
+:root{
+  --serif:"Cormorant Garamond", "Times New Roman", serif;
+  --sans:"Jost", "Helvetica Neue", Arial, sans-serif;
+}
+html{font-synthesis:none}
+body{
+  font-family:var(--sans);
+  font-weight:400;
+  letter-spacing:.012em;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3,h4,.collection-title h3,.step h3,.flavour-list strong,
+.faq-list summary,.visit-details p,.basket-row strong,.modal-copy h2{
+  font-family:var(--serif);
+  font-optical-sizing:auto;
+  font-kerning:normal;
+  letter-spacing:-.035em;
+}
+.hero h1{
+  font-weight:500;
+  letter-spacing:-.055em;
+  line-height:.82;
+  text-shadow:0 3px 24px #160b0860;
+}
+.hero h1 em,h2 em,.footer-tagline em{
+  font-style:italic;
+  letter-spacing:-.045em;
+}
+h2{
+  font-weight:500;
+  letter-spacing:-.045em;
+  line-height:.91;
+}
+.eyebrow,.announcement,.hero-note,.brand-copy small,
+.main-nav,.basket-trigger,.button,.text-link,
+.design-info small,.collection-title span,.form-title,
+.form-grid>label,.visit-details span{
+  text-transform:uppercase;
+  letter-spacing:.16em;
+}
+.brand-copy strong{
+  font-family:var(--sans);
+  font-weight:500;
+  letter-spacing:.27em;
+}
+.main-nav{
+  font-size:10px;
+  font-weight:500;
+  letter-spacing:.14em;
+}
+.eyebrow{
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:.24em;
+}
+.hero-intro,.intro-copy,.section-heading>p,.story-copy p,
+.order-intro>p,.editorial-copy>p,.visit-left>p{
+  letter-spacing:.025em;
+  line-height:2;
+}
+.design-info h4{
+  font-size:clamp(23px,2vw,29px);
+  font-weight:500;
+  letter-spacing:-.04em;
+  line-height:1;
+}
+.collection-title h3{letter-spacing:-.035em}
+.step h3,.flavour-list strong,.faq-list summary{
+  letter-spacing:-.025em;
+}
+.button,.basket-trigger,.clear-filter{
+  font-family:var(--sans);
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:.17em;
+}
+.form-grid input,.form-grid select,.form-grid textarea{
+  font-family:var(--sans);
+  letter-spacing:.02em;
+}
+.footer-tagline{
+  letter-spacing:-.045em;
+}
+@media(max-width:650px){
+  .hero h1{font-size:clamp(64px,17vw,82px);line-height:.84}
+  h2{letter-spacing:-.04em}
+  .main-nav{letter-spacing:.12em}
+  .design-info h4{font-size:23px}
+}
