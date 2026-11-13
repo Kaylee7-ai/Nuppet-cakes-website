@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2b1810">
+  <meta name="description" content="Explore cake design inspiration and enquire about a custom celebration cake from Nupet Cakes in Spintex, Accra.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nupet Cakes — The Art of a Sweet Occasion">
+  <meta property="og:description" content="Thoughtful cake design for life's sweetest moments. Explore illustrative cake concepts and enquire in Spintex, Accra.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1774660811213-5928a566cfb7?auto=format&fit=crop&w=1200&q=80">
+  <title>Nupet Cakes | The Art of a Sweet Occasion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Bakery",
+    "name":"Nupet Cakes",
+    "telephone":"+233208337856",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"13 Nii Klu Street, Spintex Road",
+      "addressLocality":"Accra",
+      "addressCountry":"GH"
+    },
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"19:00"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="announcement">SPINTEX, ACCRA <span>·</span> MADE FOR YOUR MOMENTS <span>·</span> ENQUIRE FOR AVAILABILITY</div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Nupet Cakes home">
+      <span class="brand-mark">N</span>
+      <span class="brand-copy"><strong>NUPET</strong><small>CAKES & CONFECTIONS</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#collections">Collections</a><a href="#story">Our story</a><a href="#guide">Ordering guide</a><a href="#faq">FAQ</a><a href="#visit">Visit us</a>
+    </nav>
+    <button class="basket-trigger" id="basketOpen" aria-label="Open enquiry basket">ENQUIRY BAG <span id="basketCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Illustrative celebration cake with warm editorial styling"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow light">THE ART OF A SWEET OCCASION</p>
+        <h1>Moments made<br><em>memorable.</em></h1>
+        <p class="hero-intro">A beautiful cake has a way of making a moment feel like yours. Discover ideas for your next celebration and let’s talk about the details.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#order">Enquire about a cake <span>↗</span></a><a class="text-link light-link" href="#collections">Explore the collections <span>↓</span></a></div>
+      </div>
+      <div class="hero-note"><span>01 / 07</span><span>CAKE DESIGN INSPIRATION</span></div>
+    </section>
+
+    <section class="intro section-pad reveal">
+      <div class="intro-kicker">A LITTLE SOMETHING<br>FOR EVERY OCCASION</div>
+      <div class="intro-main"><p class="eyebrow">WELCOME TO NUPET CAKES</p><h2>For the moments<br>that <em>deserve a centrepiece.</em></h2></div>
+      <p class="intro-copy">From intimate celebrations to once-in-a-lifetime gatherings, begin with an idea, a date and a little inspiration. Every design shown here is a sample concept, not a confirmed Nupet Cakes menu item.</p>
+    </section>
+
+    <section class="collections section-pad" id="collections">
+      <div class="section-heading reveal"><div><p class="eyebrow">THE COLLECTIONS</p><h2>Find your <em>occasion.</em></h2></div><p>Explore the inspiration, then add your favourites to one enquiry.</p></div>
+      <div class="filter-panel reveal">
+        <label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search cake inspiration…" aria-label="Search cake inspiration"></label>
+        <select id="occasionFilter" aria-label="Filter by occasion"><option value="all">All occasions</option><option value="birthday">Birthday</option><option value="wedding">Wedding</option><option value="celebration">Celebration & anniversary</option><option value="graduation">Graduation</option><option value="corporate">Events & corporate</option><option value="kids">Kids & themed</option><option value="desserts">Cupcakes & desserts</option></select>
+        <select id="flavourFilter" aria-label="Filter by flavour request"><option value="all">Any flavour request</option><option>Chocolate</option><option>Vanilla</option><option>Red velvet</option><option>Fruit</option><option>Not sure yet</option></select>
+        <select id="sizeFilter" aria-label="Filter by size preference"><option value="all">Any size preference</option><option>Small gathering</option><option>Medium gathering</option><option>Large gathering</option><option>Event scale</option></select>
+        <select id="budgetFilter" aria-label="Filter by budget"><option value="all">Budget: request a quote</option><option value="quote">Prices not published</option></select>
+        <button class="clear-filter" id="clearFilters">Reset</button>
+      </div>
+      <p class="filter-note">Flavour and size filters help describe your enquiry; availability and servings must be confirmed by Nupet Cakes. Prices are not published here.</p>
+      <div id="collectionSections"></div>
+      <p class="empty-state" id="emptyState" hidden>No sample designs match those filters. Try a different search.</p>
+    </section>
+
+    <section class="editorial-band">
+      <div class="editorial-photo"></div><div class="editorial-copy reveal"><p class="eyebrow light">MADE FOR THE MOMENT</p><h2>A detail worth<br><em>remembering.</em></h2><p>Share the feeling, colours and little details you have in mind. We’ll help you turn your inspiration into a cake enquiry.</p><a class="button button-outline" href="#order">Start a custom enquiry <span>↗</span></a></div>
+    </section>
+
+    <section class="guide section-pad" id="guide">
+      <div class="section-heading reveal"><div><p class="eyebrow">THE NUPET EXPERIENCE</p><h2>Four steps to <em>something sweet.</em></h2></div><p>Order details, lead times and payment arrangements are confirmed directly with the business.</p></div>
+      <div class="steps">
+        <article class="step reveal"><span>01</span><h3>Choose your inspiration</h3><p>Browse the sample collections or bring your own reference image.</p></article>
+        <article class="step reveal"><span>02</span><h3>Share the details</h3><p>Tell us the occasion, date, preferred size and flavour request.</p></article>
+        <article class="step reveal"><span>03</span><h3>Confirm your quote</h3><p>Ask Nupet Cakes to confirm design availability, final price and notice period.</p></article>
+        <article class="step reveal"><span>04</span><h3>Arrange collection</h3><p>Confirm pickup or delivery, payment method and collection timing directly.</p></article>
+      </div>
+    </section>
+
+    <section class="flavour-section">
+      <div class="flavour-copy reveal"><p class="eyebrow light">THE LITTLE DETAILS</p><h2>Make it <em>your own.</em></h2><p>Flavour choices, fillings, dietary needs and cake sizes have not yet been confirmed by the business. Use the enquiry form to ask what is available for your date.</p><a class="text-link light-link" href="#order">Ask about flavours & sizes <span>↗</span></a></div>
+      <div class="flavour-list reveal"><div><span>01</span><strong>Flavour</strong><small>Ask for current options</small></div><div><span>02</span><strong>Size & servings</strong><small>Confirm portions and dimensions</small></div><div><span>03</span><strong>Finish & filling</strong><small>Discuss design and dietary needs</small></div><div><span>04</span><strong>Personal details</strong><small>Colours, message and topper</small></div></div>
+    </section>
+
+    <section class="order-section section-pad" id="order">
+      <div class="order-intro reveal"><p class="eyebrow">LET’S CREATE SOMETHING</p><h2>Your occasion,<br><em>your cake story.</em></h2><p>Send an enquiry with the details you already know. This demo prepares a WhatsApp message; it does not take payment or confirm an order.</p><div class="order-aside"><span class="aside-icon">✳</span><p><strong>A note on notice periods</strong><br>Minimum lead time is not publicly confirmed. Please ask about availability before making plans or payment.</p></div></div>
+      <form id="orderForm" class="order-form reveal">
+        <div class="form-title"><span>01 — YOUR DETAILS</span><span>ENQUIRY FORM</span></div>
+        <div class="form-grid"><label>Your name<input name="name" required autocomplete="name" placeholder="Full name"></label><label>Phone number<input name="phone" required autocomplete="tel" type="tel" placeholder="+233 …"></label><label>Occasion<select name="occasion" required><option value="">Choose occasion</option><option>Birthday</option><option>Wedding</option><option>Celebration / Anniversary</option><option>Graduation</option><option>Events / Corporate</option><option>Kids / Themed</option><option>Cupcakes / Desserts</option><option>Other</option></select></label><label>Date needed<input name="date" type="date" required id="neededDate"></label><label>Flavour request<select name="flavour"><option>Not sure yet — please advise</option><option>Chocolate (availability to confirm)</option><option>Vanilla (availability to confirm)</option><option>Red velvet (availability to confirm)</option><option>Fruit (availability to confirm)</option><option>Other / please discuss</option></select></label><label>Size / servings<select name="size"><option>Not sure — please advise</option><option>Small gathering (confirm servings)</option><option>Medium gathering (confirm servings)</option><option>Large gathering (confirm servings)</option><option>Event scale (confirm servings)</option></select></label><label class="full">Design notes<textarea name="notes" rows="4" placeholder="Colours, theme, message on the cake, inspiration…"></textarea></label><label class="full upload-label">Inspiration image (optional)<input name="inspiration" id="inspiration" type="file" accept="image/*"><small id="fileNote">If you attach an image, send it manually in WhatsApp after the message opens.</small></label><fieldset class="full"><legend>Collection preference</legend><label class="radio-label"><input type="radio" name="fulfilment" value="Pickup" checked> Pickup</label><label class="radio-label"><input type="radio" name="fulfilment" value="Delivery (area to be confirmed)"> Delivery (area to be confirmed)</label></fieldset><label class="full">Delivery address (if applicable)<input name="address" placeholder="Area / landmark — only if delivery is requested"></label></div>
+        <p class="form-disclaimer">Submitting sends an enquiry only. Price, availability, lead time, delivery fees, deposits and payment arrangements must be agreed directly with Nupet Cakes.</p>
+        <button class="button button-dark submit-button" type="submit">Prepare WhatsApp enquiry <span>↗</span></button>
+        <a class="email-fallback" id="emailFallback" href="#">Or prepare an email draft (recipient to be confirmed)</a>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="reviews-section">
+      <div class="reviews-heading reveal"><p class="eyebrow light">KIND WORDS, PUBLICLY SHARED</p><h2>Good moments<br><em>stay with you.</em></h2><p>Wanderlog currently displays a 4.9/5 rating from 74 Google-sourced reviews. The themes below are paraphrased from public review summaries, not direct quotations or independently verified customer endorsements.</p></div>
+      <div class="review-cards"><article class="review-card reveal"><span>01 / SERVICE</span><h3>Warm, responsive communication</h3><p>Public review summaries mention friendly, professional service and prompt responses.</p></article><article class="review-card reveal"><span>02 / DESIGN</span><h3>Beautiful presentation</h3><p>Review summaries refer to cake designs and presentation that customers appreciated.</p></article><article class="review-card reveal"><span>03 / TASTE & DELIVERY</span><h3>Made for the occasion</h3><p>Public summaries mention enjoyable taste and timely delivery experiences.</p></article></div>
+      <a class="review-source" href="https://wanderlog.com/place/details/11460623/nupet-cakes" target="_blank" rel="noopener">View public listing and reviews ↗</a>
+    </section>
+
+    <section class="story section-pad" id="story">
+      <div class="story-image reveal"><img src="https://images.unsplash.com/photo-1681497397322-f5c92c50839c?auto=format&fit=crop&w=1100&q=78" alt="Illustrative cake design photograph" loading="lazy"></div>
+      <div class="story-copy reveal"><p class="eyebrow">A NOTE ABOUT NUPET</p><h2>Celebrations begin<br>with <em>a conversation.</em></h2><p>Nupet Cakes is listed as a cake shop in Spintex, Accra. This concept gives the business a refined digital storefront where visitors can explore cake inspiration and prepare a clear enquiry.</p><p>The brand story, baking philosophy, team photographs and real product portfolio should be added only after the owner has reviewed and approved them.</p><a class="text-link" href="#visit">Find contact details <span>↗</span></a></div>
+    </section>
+
+    <section class="faq-section section-pad" id="faq">
+      <div class="section-heading reveal"><div><p class="eyebrow">A FEW THINGS TO KNOW</p><h2>Questions, <em>answered.</em></h2></div><p>Operational policies below are deliberately left for the owner to confirm.</p></div>
+      <div class="faq-list">
+        <details><summary>Which flavours are available?<span>＋</span></summary><p>Flavour options have not been verified. Please contact Nupet Cakes to confirm the current menu and availability.</p></details>
+        <details><summary>How far ahead should I order?<span>＋</span></summary><p>The minimum lead time is not confirmed. Ask the business before selecting a date, especially for custom designs or larger orders.</p></details>
+        <details><summary>Do you require a deposit?<span>＋</span></summary><p>Deposit requirements and payment terms are not published in this concept. Confirm the amount, recipient and terms directly with the business.</p></details>
+        <details><summary>Can I request delivery?<span>＋</span></summary><p>Public reviews mention delivery, but delivery zones, fees and availability are not verified. Share your area and ask for confirmation.</p></details>
+        <details><summary>Can you make allergy-aware cakes?<span>＋</span></summary><p>Allergen handling and cross-contact practices have not been confirmed. Discuss allergies directly with the baker before ordering.</p></details>
+        <details><summary>What is the cancellation or change policy?<span>＋</span></summary><p>Cancellation, refund and change policies must be supplied and approved by Nupet Cakes before launch.</p></details>
+      </div>
+    </section>
+
+    <section class="visit-section" id="visit">
+      <div class="visit-left reveal"><p class="eyebrow light">COME SAY HELLO</p><h2>Find us in<br><em>Spintex.</em></h2><p>Public business listings show the details below. Please confirm the pickup address and hours with the business before travelling.</p><a class="button button-gold" href="https://www.google.com/maps/search/?api=1&query=13+Nii+Klu+Street+Spintex+Road+Accra+Ghana" target="_blank" rel="noopener">Open map directions <span>↗</span></a></div>
+      <div class="visit-details reveal"><div><span>ADDRESS — PUBLIC LISTING</span><p>13 Nii Klu Street,<br>Spintex Road, Accra, Ghana</p></div><div><span>CALL</span><p><a href="tel:+233208337856">+233 20 833 7856</a></p></div><div><span>LISTED OPENING HOURS</span><p>Monday – Saturday<br>8:00 am – 7:00 pm<br>Sunday — Closed</p></div><div><span>DELIVERY & SOCIAL</span><p>Ask about delivery areas and request the official social links directly.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="#top"><span class="brand-mark">N</span><span class="brand-copy"><strong>NUPET</strong><small>CAKES & CONFECTIONS</small></span></a><p class="footer-tagline">The art of a<br><em>sweet occasion.</em></p><div class="footer-links"><a href="#collections">Collections</a><a href="#order">Custom enquiry</a><a href="#faq">FAQ</a><a href="#visit">Contact</a></div><div class="footer-contact"><a href="tel:+233208337856">+233 20 833 7856</a><span>Spintex · Accra · Ghana</span></div></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Nupet Cakes concept</span><span>Independent website concept · Pending approval by Nupet Cakes</span><a href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+
+  <div class="sticky-mobile"><a href="https://wa.me/233208337856?text=Hello%20Nupet%20Cakes%2C%20I%20would%20like%20to%20enquire%20about%20a%20cake." target="_blank" rel="noopener">Order on WhatsApp ↗</a><a href="tel:+233208337856">Call</a></div>
+
+  <div class="basket-overlay" id="basketOverlay" hidden></div>
+  <aside class="basket-drawer" id="basketDrawer" aria-label="Enquiry basket" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SHORTLIST</p><h2>Enquiry bag</h2></div><button class="icon-button" id="basketClose" aria-label="Close enquiry basket">×</button></div>
+    <div class="basket-items" id="basketItems"><p class="basket-empty">Your enquiry bag is empty. Add a few designs to get started.</p></div>
+    <div class="drawer-bottom"><p>These are inspiration samples, not confirmed catalogue products or prices.</p><button class="button button-dark" id="sendBasket">Send one WhatsApp enquiry ↗</button><button class="clear-basket" id="clearBasket">Clear bag</button></div>
+  </aside>
+
+  <div class="quick-modal" id="quickModal" role="dialog" aria-modal="true" aria-labelledby="quickTitle" hidden>
+    <div class="modal-backdrop" data-close-modal></div><div class="modal-card"><button class="icon-button modal-close" data-close-modal aria-label="Close">×</button><img id="quickImage" src="" alt=""><div class="modal-copy"><p class="eyebrow" id="quickCategory"></p><h2 id="quickTitle"></h2><p id="quickDescription"></p><p class="modal-note">Illustrative sample design. Flavour, size, availability and price must be confirmed.</p><button class="button button-dark" id="quickAdd">Add to enquiry bag +</button></div></div>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>
